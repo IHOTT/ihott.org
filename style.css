@@ -3,6 +3,12 @@ html, body {
   /*background-color: #1d1e22;*/
   font-family: 'Raleway Dots', sans-serif;
 }
+nav {
+  opacity:0;
+  animation: 1.25s ease 3s 1 fadeIn;
+  animation-fill-mode: forwards;
+  user-select: none;
+}
 h1 {
   margin-top: 10vh;
   color: #fff;
