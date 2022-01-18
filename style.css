@@ -1,0 +1,88 @@
+html, body {
+  /* margin: 0; */
+  /*background-color: #1d1e22;*/
+  font-family: 'Raleway Dots', sans-serif;
+}
+h1 {
+  margin-top: 10vh;
+  color: #fff;
+  /* font-size: 1.6em; */
+  text-align: center;
+  opacity:0;
+  animation: 1.25s ease 3s 1 fadeIn;
+  animation-fill-mode: forwards;
+  user-select: none;
+}
+h3 {
+  margin: 30px 0px 40px;
+  color: #fff;
+  /* font-size: 1.6em; */
+  text-align: center;
+  opacity:0;
+  animation: 1.25s ease 1.33s 1 fadeIn;
+  animation-fill-mode: forwards;
+  user-select: none;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity:0;
+  user-select: none;
+}
+.logo-img{
+    height: 30vh;
+    margin-top: 20vh;
+    position: relative;
+    animation: 1.25s ease 0.25s 1 fadeIn;
+    animation-fill-mode: forwards;
+}
+/* unvisited link */
+a:link {
+  color: #ccc;
+}
+/* visited link */
+a:visited {
+  color: #ccc;
+}
+/* mouse over link */
+a:hover {
+  color: #ffffff;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+@keyframes fadeInVideo {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:0.5;
+  }
+}
+
+#videoDiv {
+  z-index: -5;
+  background-color: #1d1e22;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0;
+  z-index: -100;
+  animation: 3s ease 2.5s 1 fadeInVideo;
+  animation-fill-mode: forwards;
+}
