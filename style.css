@@ -36,6 +36,11 @@ img {
   opacity:0;
   user-select: none;
 }
+li {
+  display: inline;
+  padding: 10px;
+}
+
 .logo-img{
     height: 30vh;
     margin-top: 20vh;
